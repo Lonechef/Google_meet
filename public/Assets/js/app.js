@@ -156,8 +156,8 @@ var rtp_vid_senders=[];
                     //We are storing our output in vStream
                     vstream=await navigator.mediaDevices.getUserMedia({
                    video:{ 
-                    width:1020,
-                    height:980
+                    width:1920,
+                    height:1080
                    },
                    audio:false 
                 });
@@ -165,8 +165,8 @@ var rtp_vid_senders=[];
                else if(newVideoState==video_states.ScreenShare){
                 vstream=await navigator.mediaDevices.getDisplayMedia({
                     video:{
-                     width:1020,
-                     height:980
+                     width:1920,
+                     height:1080
                     },
                     audio:false 
                  });
