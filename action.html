@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create or Join Meeting </title>
+    <!-- Linking css file -->
+    <link rel="stylesheet" href="public/Assets/css/bootstrap.min.css">
+    <!-- Linking Google material Item -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="public/Assets/css/style.css"> 
+   
+   
+
+
+
+</head>
+<body style="padding-top: 3.5rem;">
+    <!-- Now we will create a nav bar for our heading -->
+    <!-- fixed-top will fix nav bar at the top -->
+    <nav class="navbar navbar-expand-md fixed-top">
+        <!-- Now applying out image -->
+          <img src="public/Assets/images/google-meet-icon.png" class="logo" alt="">
+        <a href="#" class="navbar-brand text-dark"> Google Meet</a>
+        <div class="collapse navbar-collapse">
+            <ul 
+            
+            
+            class="navbar-nav mr-auto">
+                <li class="nav-item"><a href="#" class="nav-link">At a glance</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">How it works</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Plan and Price</a></li>
+            </ul>
+            <!-- Doing mr-0 will shift all the items on the right side -->
+            <ul class="navbar-nav mr-0">
+                <!-- display-center is custom class made by us in style.css -->
+                <li class="nav-item sign-in display-center"><a href="#" class="nav-link" id="sign">Sign in</a></li>
+                <li class="nav-item">
+                    <!-- We will create a button -->
+                    <button class="btn  btn-outline-secondary btn-lg  text-info font-weigth-bold 
+                    join-meeting"  id="joinbtn">Join Meeting</button>
+                </li>
+                <li class="nav-item"><button class="btn  btn-lg btn-info text-light font-weight-bold new-meeting" style="background-color: #1a73e8;">Start Meeting</button></li>
+            </ul>
+        </div> 
+    </nav>
+    <main>
+       <div class="jumbotron h-100 d-flex">
+        <div class="container w-50">
+            <h1 style="font-size: 3rem;">Video call and meeting facility for everyone. </h1>
+            <p style="font-size: 20px;">Google Meet is a service that is available to everyone on every device. It can be used for secure and high quality video meetings and calls.</p>
+            <!-- Creating few buttons --> 
+            <ul class="display-center ">
+                <li style="padding: 0;">
+                <button class=" btn btn-lg text-light font-weight-bold display-center new-meeting " style="background-color: #1a73e8;"><span class="material-icons mr-2">video_call</span>New Meeting</button>
+            </li>
+            <li class="pl-3">
+                <button class=" btn btn-lg btn-outline-secondary text-dark font-weight-bold display-center" style="background-color: #ffffff;"><span class="material-icons mr-2">keyboard</span><input type="text" placeholder="Enter a code" style="border: none;"
+                    class="enter-code"></button>
+            </li> 
+            <!-- here cursor pointer class is a custom class  -->
+            <li class="text-dark pl-2 font-weight-bold cursor-pointer join-action"
+            >Join</li>
+
+
+            </ul>
+
+        </div>
+        <div class="container w-50">
+            <img src="public/Assets/images/imggooglr.png"  class="signin-image" alt="">
+        </div>
+       </div>
+    </main>
+    <footer class="container">
+        <h6>Learn More about <span class="learn-more text-info">Google meet</span>.</h6>
+        
+    </footer>
+    <!-- Now we will add actions to buttons and kinks  -->
+    <!-- The following link is the jqery CDN from Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    // First we will intialize jquey by creating a function
+    $(function(){
+        // Now here Join the meeting and new Meeting will work same and start a meeting will reflect to enter a code
+           $(document).on("click",".join-meeting",function(){
+            $(".enter-code").focus();
+
+           });
+           $(document).on("click",".join-action",function(){
+            //On clicking on join-action it will take value from enter-code
+            //and storee t in join_vzlue variable
+            var join_value=$('.enter-code').val();
+            //window.location.origin : this will take origin like https://Google meet from the Brand name
+            //After this we will try to concate the 
+            //Now we will declare aparameter meetingID with a question mark
+            //var meetingUrl=window.location.origin+"?meetingID="+join_value;
+            var meetingUrl=window.location.origin+"?meetingID="+join_value;
+            window.location.replace(meetingUrl);
+            //Now we will give action to new meeting button
+            
+
+
+           })
+           //Now in this is we click on neww m
+           $(document).on("click",".new-meeting",function(){
+        //Now we will genrate a random meeting id and the button will redirect us over there
+            var eight_d_value=Math.floor(Math.random()*100000000);
+            
+            var meetingUrl=window.location.origin+"?meetingID="+eight_d_value;
+            window.location.replace(meetingUrl);
+            //Now we will give action to new meeting button
+            
+
+
+           })
+
+    })
+    </script> 
+</body> 
+</html>
