@@ -50,15 +50,15 @@ These instructions will help you set up and run the project on your local machin
    npm start
    2. Open a web browser and go to http://localhost:5000.
 
-   3.Sign in or create an account.
+   3. Sign in or create an account.
 
-   4.Start or join a meeting.
+   4. Start or join a meeting.
 
-   5.Use the video controls to switch on/off your video and audio.
+   5. Use the video controls to switch on/off your video and audio.
    
-   6.Use the chat feature to communicate with participants.
+   6. Use the chat feature to communicate with participants.
 
-   7.Record the meeting, and the recording will be saved locally.
+   7. Record the meeting, and the recording will be saved locally.
 
 Recording
 
