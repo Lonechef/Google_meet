@@ -16,7 +16,7 @@ A simple Google Meet clone using HTML, Bootstrap, Node.js, WebRTC, and Socket.io
 
 ## Demo
 -> Below attached is the drive link you can see the demo over here
-https://drive.google.com/drive/u/0/my-drive
+https://drive.google.com/file/d/1CEeN38rXli7rSVuVFPwJ_JpwtYi_rRyW/view?usp=sharing
 
 ## Features
 
