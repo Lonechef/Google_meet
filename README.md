@@ -45,6 +45,7 @@ These instructions will help you set up and run the project on your local machin
    cd Google_meet
    Install the dependencies:
    npm install
+2. Usage
    Satrt The Server:
    npm start
    Open a web browser and go to http://localhost:3000.
