@@ -46,19 +46,19 @@ These instructions will help you set up and run the project on your local machin
    Install the dependencies:
    npm install
 2. Usage
-   Satrt The Server:
+   1. Start The Server:
    npm start
-   Open a web browser and go to http://localhost:3000.
+   2. Open a web browser and go to http://localhost:5000.
 
-Sign in or create an account.
+   3.Sign in or create an account.
 
-Start or join a meeting.
+   4.Start or join a meeting.
 
-Use the video controls to switch on/off your video and audio.
+   5.Use the video controls to switch on/off your video and audio.
+   
+  6. Use the chat feature to communicate with participants.
 
-Use the chat feature to communicate with participants.
-
-Record the meeting, and the recording will be saved locally.
+  7.Record the meeting, and the recording will be saved locally.
 
 Recording
 
@@ -66,21 +66,21 @@ The recording feature saves the meeting to the local machine. You can find your 
 
 Contributing
 
-If you'd like to contribute to this project, please follow these steps:
+1.If you'd like to contribute to this project, please follow these steps:
 
-Fork the repository on GitHub.
+2.Fork the repository on GitHub.
 
-Clone your forked repository to your local machine.
+3.Clone your forked repository to your local machine.
 
-Create a new branch and make your changes.
+4.Create a new branch and make your changes.
 
-Test your changes thoroughly.
+5.Test your changes thoroughly.
 
-Commit your changes with clear and concise commit messages.
+6.Commit your changes with clear and concise commit messages.
 
-Push your changes to your forked repository on GitHub.
+7.Push your changes to your forked repository on GitHub.
 
-Create a pull request to the original repository, explaining the changes you made.
+8.Create a pull request to the original repository, explaining the changes you made.
 
 
    
