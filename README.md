@@ -56,7 +56,7 @@ These instructions will help you set up and run the project on your local machin
 
    5.Use the video controls to switch on/off your video and audio.
    
-   6. Use the chat feature to communicate with participants.
+   6.Use the chat feature to communicate with participants.
 
    7.Record the meeting, and the recording will be saved locally.
 
